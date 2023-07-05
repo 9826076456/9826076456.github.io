@@ -7,21 +7,51 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
-    <script src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.4.0/dist/js/lightgallery.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/lightgallery.js@1.4.0/dist/css/lightgallery.min.css" rel="stylesheet">
-</head>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  </head>
 <body>
-    <div id="lightgallery">
-        <a href="img/1.jpg">
-            <img src="img/1.jpg">
-        </a>
-        <a href="img/2.jpg">
-            <img src="img/2.jpg">
-        </a>
-    </div>
 
-    <script>
-        lightGallery(document.getElementById('lightgallery'));
-    </script>
+
+<div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="img/1.jpg" /></div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide"><img src="img/3.jpg" /></div>
+    </div>
+    <div class="swiper-pagination"></div>
+  
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <div class="swiper-scrollbar"></div>
+  </div>
+
+<script>const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'vertical',
+    loop: true,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });</script>
+
+
 </body>
 </html>
