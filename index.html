@@ -46,6 +46,18 @@
           height: 100%;
           object-fit: cover;
         }
+    
+        .swiper-slide {
+          width: 60%;
+        }
+    
+        .swiper-slide:nth-child(2n) {
+          width: 40%;
+        }
+    
+        .swiper-slide:nth-child(3n) {
+          width: 20%;
+        }
       </style>
  </head>
 <body>
@@ -78,9 +90,12 @@
 
   <script>
     var swiper = new Swiper(".mySwiper", {
+      slidesPerView: "auto",
+      centeredSlides: true,
+      spaceBetween: 30,
       pagination: {
         el: ".swiper-pagination",
-        dynamicBullets: true,
+        clickable: true,
       },
     });
   </script>
