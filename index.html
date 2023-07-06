@@ -1,98 +1,136 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <meta property="og:image" content="https://9826076456.github.io/img/15b.jpg">
     <meta name="twitter:card" content="summary_large_image">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-  
-    <style>
-        html,
-        body {
-          position: relative;
-          height: 100%;
-        }
-    
-        body {
-          background: #eee;
-          font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-          font-size: 14px;
-          color: #000;
-          margin: 0;
-          padding: 0;
-        }
-    
-        .swiper {
-          width: 100%;
-          height: 100%;
-        }
-    
-        .swiper-slide {
-          text-align: center;
-          font-size: 18px;
-          background: #fff;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-    
-        .swiper-slide img {
-          display: block;
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-        }
-    
-        .swiper-slide {
-            width: 100%;
-            display: block;
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <script src="https://cdn.jsdelivr.net/npm/typeit@8.7.1/dist/index.umd.min.js"></script> </head>
 
+   <style>
+         
+        body, html {
+            cursor: url('img/cursor.png'), auto;
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
         }
-    
-  
-      </style>
- </head>
+        
+        .full-screen {
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            height: 100vh; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .content {
+            background: #f2f2f2;
+            padding: 20px;
+        }
+        .tile {
+  display: flex;
+  align-items: center;
+}
+    </style>
 <body>
 
 
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="img/1.jpg" /></div>
-      <div class="swiper-slide"><img src="img/2.jpg" /></div>
-      <div class="swiper-slide"><img src="img/3.jpg" /></div>
-      <div class="swiper-slide"><img src="img/5.jpg" /></div>
-      <div class="swiper-slide"><img src="img/6.jpg" /></div>
-      <div class="swiper-slide"><img src="img/8.jpg" /></div>
-      <div class="swiper-slide"><img src="img/9.jpg" /></div>
-      <div class="swiper-slide"><img src="img/10.jpg" /></div>
-      <div class="swiper-slide"><img src="img/12.jpg" /></div>
-      <div class="swiper-slide"><img src="img/13.jpg" /></div>
-      <div class="swiper-slide"><img src="img/14.jpg" /></div>
-      <div class="swiper-slide"><img src="img/15.jpg" /></div>
-      <div class="swiper-slide"><img src="img/17.jpg" /></div>
-      <div class="swiper-slide"><img src="img/18.jpg" /></div>
+  <div class="full-screen">
+    <section class="section">
+      <div class="container">
+        <h1 id="typeWriteTitle" class="title has-text-white">
+        </h1>
+        <p class="subtitle has-text-white">
+          À <strong class="has-text-success	">plusieurs</strong>, on est plus <strong class="has-text-primary	"> fort</strong> contre <strong class="has-text-danger"> ADAM </strong>  !
+        </p>
+      </div>
+    </section>
+</div>
 
+<div class="content">
+  <article class="message is-primary is-medium">
+    <div class="message-body">
+      Faites attention à cet individu, connu également sous le nom de Ronflex en anglais avec une faute d'orthographe. Il est extrêmement dangereux. Il possède une résistance mentale impressionnante et une précision inégalée grâce à sa pratique d'<strong>osu!</strong>. Il est un stratège exceptionnel en tant que joueur d'échecs et est également doté d'une grande force physique grâce à la musculation. Il a déjà causé du tort à de nombreuses victimes. Si vous en faites partie, nous vous encourageons à rejoindre notre association.
     </div>
-    <div class="swiper-pagination"></div>
+  </article>
+</div>
+
+<div class="tile is-ancestor">
+  <div class="tile is-vertical is-8">
+    <div class="tile">
+      <div class="tile is-parent is-vertical">
+        <article class="tile is-child box">
+          <img src="img/1.jpg"></img>
+        </article>
+        <article class="tile is-child box ">
+          <img  src="img/12.jpg"></img>
+        </article>
+        <article class="tile is-child box ">
+          <img  src="img/8.jpg"></img>
+        </article>
+        <article class="tile is-child box ">
+          <img  src="img/11.jpg"></img>
+        </article>
+      </div>
+      <div class="tile is-parent  is-vertical">
+      
+        <article class="tile is-child box">
+          <img src="img/13.jpg"></img>
+        </article>
+        <article class="tile is-child box ">
+          <img  src="img/9.jpg"></img>
+        </article>
+        
+        <article class="tile is-child box ">
+          <img  src="img/16.jpg"></img>
+        </article>
+        <article class="tile is-child box ">
+          <img  src="img/2.jpg"></img>
+        </article>
+        <article class=" tile is-child box ">
+          <img src="img/5.jpg"></img>
+        </article>
+      </div>
+      
+    </div>
+   
+  </div>
+  <div class="tile is-parent is-vertical">
+    <article class="tile is-child box">
+      <img src="img/17.jpg"></img>
+    </article>
+    <article class="tile is-child box">
+      <img src="img/18.jpg"></img>
+    </article>
+  
+    <article class="tile is-child box ">
+      <img  src="img/6.jpg"></img>
+    </article>
+    <article class="tile is-child box ">
+      <img  src="img/14.jpg"></img>
+    </article>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</div>
 
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: "auto",
-      centeredSlides: true,
-      spaceBetween: 30,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
-  </script>
+
+
+
+
+<script>
+  new TypeIt("#typeWriteTitle", {
+  strings: "Non au harc\u00e8lement ",
+  speed: 50,
+  waitUntilVisible: true,
+}).go();
+</script>
 
 </body>
 </html>
